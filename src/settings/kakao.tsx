@@ -1,11 +1,11 @@
 interface KakaoVar {
-  JS_KEY: string;
-  REST_KEY: string;
+  JS_KEY?: string;
+  REST_KEY?: string;
 }
 
-const kakao = {
-  JS_KEY: process.env.KAKAO_JS_KEY,
-  REST_KEY: process.env.KAKAO_REST_KEY,
+const kakao: KakaoVar = {
+  JS_KEY: process.env.KAKAO_JS_KEY?.toString(),
+  REST_KEY: process.env.KAKAO_REST_KEY?.toString(),
 };
 
 export { kakao };
