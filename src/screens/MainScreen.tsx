@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -7,6 +7,8 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+
+import { Map } from '../components/map';
 
 class MainScreen extends Component<{}, {}> {
   render() {
@@ -17,7 +19,8 @@ class MainScreen extends Component<{}, {}> {
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-        <Text style={{color: 'black'}}>Hello</Text>
+        <Text style={{ color: 'black' }}>Hello</Text>
+        <Map />
       </View>
     );
   }
